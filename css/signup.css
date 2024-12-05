@@ -1,0 +1,35 @@
+body{
+    background-color: #24353f;
+    font-family: sans-serif;
+}
+h1{
+    color: rgb(23, 162, 184);
+  
+    font-size: 40px;
+    font-weight: 500;
+}
+.group{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    background-color: #24353f ;
+    width: 60%;
+    
+}
+#inputName::placeholder{
+    color:#70777d;
+    font-size: 16px;
+}
+#inputEmail::placeholder {
+    color:#70777d;
+    font-size: 16px;
+
+}
+
+#inputPass::placeholder {
+    color:#70777d;
+    font-size: 16px;
+
+}
+.group p a:hover{
+
+border-bottom: 2px solid white;
+}

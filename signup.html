@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/signup.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="group py-5 my-5 mx-auto">
+      <h1 class="text-center pb-3">Smart Login System</h1>
+      <div class="mx-5 mb-3 p-1">
+          <input oninput="validateInputs(this)"  type="text" class="form-control bg-transparent text-white border-white rounded-2" id="inputName" placeholder="Enter Your Name" required>
+      </div>
+      <div class="mx-5 mb-3 p-1">
+          <input oninput="validateInputs(this)"  type="email" class="form-control bg-transparent text-white border-white rounded-2 " id="inputEmail" placeholder="Enter Your Email" required>
+      </div>
+      <div class="mx-5 mb-3 p-1">
+          <input oninput="validateInputs(this)"  type="password" class="form-control bg-transparent text-white border-white rounded-2" id="inputPass" placeholder="Enter Your Password" required>
+      </div>
+      <p class="notValid text-center text-danger d-none">All Inputs are Required</p>
+      <p class="valid text-center text-success d-none fw-bold">Success</p>
+      <p id="exists" class=" text-center text-danger d-none">Email already exists</p>
+      <p id="incorrect" class="text-center text-danger d-none">incorrect is email or password</p>
+
+      <div class="mx-5 mb-3 p-1">
+          <button onclick="signupClick()" id="myBtn" class="btn btn-outline-info w-100">Login</button>
+      </div>
+      <p class="text-white text-center">
+          Don't have an account? <a class="text-decoration-none text-white" href="index.html">Sign in</a>
+      </p>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
